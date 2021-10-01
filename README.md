@@ -8,7 +8,10 @@ Systemback makes it easy to create backups of the system and the users configura
 
 ## Install
 
+
+
 ```bash
+sudo add-apt-repository --remove ppa:nemh/systemback    #首先删除PPA
 sudo sh -c 'echo "deb [arch=amd64] http://mirrors.bwbot.org/ stable main" > /etc/apt/sources.list.d/systemback.list'
 sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key 50B2C005A67B264F
 sudo apt-get update
